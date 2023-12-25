@@ -3,12 +3,14 @@ import React from "react";
 import { isMobile } from 'react-device-detect';
 import GithubIcon from "../../public/github-icon.svg";
 import LinkedinIcon from "../../public/linkedin-icon.svg";
+import WhatsappIcon from "../../public/whatsapp-icon.png";
 import Link from "next/link";
 import Image from "next/image";
 
 const EmailSection = () => {
     const githubUrl = "https://github.com/TharunBalaji2004";
     const linkedinUrl = "https://www.linkedin.com/in/tharun-balaji-appdev/";
+    const whatsappUrl = "https://wa.me/8248052472";
 
     return (
         <section className="grid md:grid-cols-2 my-5 md:my-12 py-10 gap-4" id="contact">
@@ -24,6 +26,9 @@ const EmailSection = () => {
                     </Link>
                     <Link href={`${linkedinUrl}`} target={isMobile ? "" : "_blank"}>
                         <Image src={LinkedinIcon} alt="Linkedin Icon" />
+                    </Link>
+                    <Link href={`${whatsappUrl}`} target={isMobile ? "" : "_blank"} className="flex items-center px-2">
+                        <Image src={WhatsappIcon} alt="Linkedin Icon" className="h-10 w-10" />
                     </Link>
                 </div>
             </div>
