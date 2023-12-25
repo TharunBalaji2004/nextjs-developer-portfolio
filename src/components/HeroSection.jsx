@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const HeroSection = () => {
     return(
-        <section>
+        <section className="sm:mt-20">
             <div className="grid grid-cols-1 sm:grid-cols-12">
             <div className="col-span-7 place-self-center text-center sm:text-left">
                 <h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold">
@@ -27,7 +27,7 @@ const HeroSection = () => {
                     repeat={Infinity}
                     />
                 </h1>
-                    <p className="text-[#ADB7BE] text-lg mb-6 lg:text-xl">
+                    <p className="text-[#ADB7BE] text-md mb-6 sm:text-xl">
                     Passionate Software Developer, creating engaging solutions. Proficient in various technologies, dedicated to crafting innovative experiences that leave a lasting impact.
                     </p>
                     <div>
