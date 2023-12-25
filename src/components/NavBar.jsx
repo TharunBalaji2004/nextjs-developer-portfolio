@@ -20,7 +20,7 @@ const navLinks = [
 
 const NavBar = () => {
     return (
-        <nav className="hidden sm:block fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
+        <nav className="hidden sm:block fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90">
             <div className="flex flex-wrap items-center justify-between mx-auto px-10 py-5">
                 <Link href={"/"} className="text-xl md:text-3xl text-white font-semibold">THARUN BALAJI</Link>
                 
