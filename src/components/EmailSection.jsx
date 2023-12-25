@@ -1,12 +1,17 @@
+"use client";
 import React from "react";
+import { isMobile } from 'react-device-detect';
 import GithubIcon from "../../public/github-icon.svg";
 import LinkedinIcon from "../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
 const EmailSection = () => {
+    const githubUrl = "https://github.com/TharunBalaji2004";
+    const linkedinUrl = "https://www.linkedin.com/in/tharun-balaji-appdev/";
+
     return (
-        <section className="grid md:grid-cols-2 my-5 md:my-12 py-10 gap-4">
+        <section className="grid md:grid-cols-2 my-5 md:my-12 py-10 gap-4" id="contact">
             <div>
                 <h5 className="text-xl font-bold text-white my-2">Let&apos;s Connect</h5>
                 <p className="text-[#ADB7BE] mb-4 max-w-md">
@@ -14,10 +19,10 @@ const EmailSection = () => {
                 </p>
 
                 <div className="socials flex flex-row gap-2">
-                    <Link href="github.com">
+                    <Link href={`${githubUrl}`} target={isMobile ? "" : "_blank"}>
                         <Image src={GithubIcon} alt="Github Icon" />
                     </Link>
-                    <Link href="linkedin.com">
+                    <Link href={`${linkedinUrl}`} target={isMobile ? "" : "_blank"}>
                         <Image src={LinkedinIcon} alt="Linkedin Icon" />
                     </Link>
                 </div>
